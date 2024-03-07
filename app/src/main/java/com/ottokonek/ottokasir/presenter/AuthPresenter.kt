@@ -24,12 +24,12 @@ class AuthPresenter(iView: IView) : BasePresenter(), AuthDao.IAuthDao {
     override fun doLogin(data: LoginRequestModel, activity: BaseActivity) {
         AuthDao(this).getLoginDAO(data, activity).subscribe(object : RxObserver<LoginResponseModel>(loginViewInterface, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 o as LoginResponseModel
                 if (o.baseMeta.code == 200) {
                     (loginViewInterface as LoginViewInterface).handleDataLogin(o)
@@ -38,7 +38,7 @@ class AuthPresenter(iView: IView) : BasePresenter(), AuthDao.IAuthDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 Log.e("Login Error", e.toString())
                 (loginViewInterface as LoginViewInterface).onConnectionFailed(e!!.localizedMessage)
             }
@@ -55,13 +55,13 @@ class AuthPresenter(iView: IView) : BasePresenter(), AuthDao.IAuthDao {
     override fun doLogout(activity: Activity) {
         AuthDao(this).getLogoutDAO()
                 .subscribe(object : RxObserver<LogoutResponse>(loginViewInterface, null) {
-                    override fun onSubscribe(d: Disposable?) {
+                    override fun onSubscribe(d: Disposable) {
                         super.onSubscribe(d)
                         compositeDisposable.add(d)
 
                     }
 
-                    override fun onNext(o: Any?) {
+                    override fun onNext(o: Any) {
                         super.onNext(o)
                         ActionUtil.logoutAction(activity)
                     }
@@ -73,12 +73,12 @@ class AuthPresenter(iView: IView) : BasePresenter(), AuthDao.IAuthDao {
     override fun doLoginSync(data: LoginSyncRequest, activity: BaseActivity) {
         AuthDao(this).getLoginSync(data, activity).subscribe(object : RxObserver<LoginResponseModel>(loginViewInterface, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 o as LoginResponseModel
                 if (o.baseMeta.code == 200) {
                     (loginViewInterface as LoginViewInterface).handleDataLoginSync(o as LoginResponseModel)
@@ -87,7 +87,7 @@ class AuthPresenter(iView: IView) : BasePresenter(), AuthDao.IAuthDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 Log.e("Login Error", e.toString())
                 (loginViewInterface as LoginViewInterface).handleError(e!!.localizedMessage)
             }

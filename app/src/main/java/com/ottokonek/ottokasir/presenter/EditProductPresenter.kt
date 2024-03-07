@@ -37,12 +37,12 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
     override fun onCreateProduct(data: CreateProductRequestModel, activity: BaseActivity) {
         dao.onCreateProduct(data, activity).subscribe(object : RxObserver<CreateProductResponse>
         (callback, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as CreateProductResponse
                 if (o.meta.code == 200) {
@@ -58,7 +58,7 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 mIView.hideLoading()
                 mIView.showToast(e!!.localizedMessage)
             }
@@ -69,12 +69,12 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
     override fun onUpdateProduct(data: UpdateProductRequestModel, activity: BaseActivity) {
         dao.onUpdateProduct(data, activity).subscribe(object : RxObserver<UpdateProductResponse>
         (callback, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as UpdateProductResponse
                 if (o.meta.code == 200) {
@@ -88,7 +88,7 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 mIView.hideLoading()
                 mIView.showToast(e!!.localizedMessage)
             }
@@ -98,12 +98,12 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
     override fun onDeleteProduct(data: DeleteProductRequestModel, activity: BaseActivity) {
         dao.onDeleteProduct(data, activity).subscribe(object : RxObserver<DeleteProductResponse>
         (callback, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as DeleteProductResponse
                 if (o.meta.code == 200) {
@@ -117,7 +117,7 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 mIView.hideLoading()
                 mIView.showToast(e!!.localizedMessage)
             }
@@ -131,14 +131,14 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
         else message = null
 
         ProductDao().onGetProduct(page, query, model).subscribe(object : RxObserver<ProductlistResponseModel>(mIView, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 compositeDisposable.add(d)
 
                 if (mIView is ManageProductIView)
                     mIView.setStatusAPI(false)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if (mIView is ManageProductIView) {
                     if ((o as BaseResponse).baseMeta.code == 200) {
                         mIView.loadProducts((o as ProductlistResponseModel).data.products)
@@ -161,7 +161,7 @@ class EditProductPresenter(val mIView: ViewBaseInterface) : BasePresenter(), Edi
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 mIView.hideLoading()
                 mIView.showToast(e!!.localizedMessage)
             }

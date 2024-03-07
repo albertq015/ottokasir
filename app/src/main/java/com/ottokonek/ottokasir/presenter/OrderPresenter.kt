@@ -47,12 +47,12 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
         OrderDao(this).onAvailableOmzetDAO(activity).subscribe(object : RxObserver<AvailableOmzetResponseModel>(
                 orderIView, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if ((o as AvailableOmzetResponseModel).meta?.code == 200) {
                     (orderIView as OmzetIView).setAvailableOmzet(o as AvailableOmzetResponseModel)
                 } else if (o.meta?.code == 498) {
@@ -64,7 +64,7 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (orderIView as OmzetIView).hideLoading()
             }
@@ -76,12 +76,12 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 orderIView, null) {
 
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if ((o as TransactionHistoryResponse).baseMeta?.code == 200) {
                     (orderIView as TransactionIView).handleSuccess(o as TransactionHistoryResponse)
                     (orderIView as TransactionIView).hideLoading()
@@ -93,13 +93,13 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (orderIView as TransactionIView).hideLoading()
                 //(orderIView as TransactionIView).onConnectionFailed(e!!.localizedMessage)
             }
 
-            /*override fun onNext(o: Any?) {
+            /*override fun onNext(o: Any) {
                 if ((o as TransactionHistoryResponse).meta?.code == 200) {
                     //(orderIView as TransactionIView).hideLoading()
                     (orderIView as TransactionIView).handleSuccess(o)
@@ -114,7 +114,7 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 (orderIView as TransactionIView).onConnectionFailed(e!!.localizedMessage)
 
             }*/
@@ -218,12 +218,12 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
         OrderDao(this).onPaymentCash(model).subscribe(object : RxObserver<PaymentCashResponseModel>(
                 orderIView, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if ((o as PaymentCashResponseModel).meta?.code == 200) {
                     (orderIView as PaymentCashIView).handleSuccess(o as PaymentCashResponseModel)
 
@@ -236,7 +236,7 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (orderIView as PaymentCashIView).onConnectionFailed(e!!.localizedMessage)
             }
@@ -247,12 +247,12 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
         OrderDao(this).onPaymentCashBond(model).subscribe(object : RxObserver<PaymentCashBondResponseModel>(
                 orderIView, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if ((o as PaymentCashBondResponseModel).meta?.code == 200) {
                     (orderIView as PaymentCashBondIView).handleSuccess(o)
 
@@ -265,7 +265,7 @@ class OrderPresenter(val iView: IView) : BasePresenter(), OrderDao.IOrderDao {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (orderIView as PaymentCashBondIView).onConnectionFailed(e!!.localizedMessage)
             }

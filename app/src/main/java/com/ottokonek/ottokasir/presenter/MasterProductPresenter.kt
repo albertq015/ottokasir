@@ -21,12 +21,12 @@ class MasterProductPresenter(iView: IView) : BasePresenter(), MasterProductDao.I
 
         MasterProductDao(this).onMasterProduct(data, activity).subscribe(object : RxObserver<MasterProductResponseModel>(masterProductIView, null) {
 
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as MasterProductResponseModel
                 if (o.meta.code == 200) {
@@ -36,7 +36,7 @@ class MasterProductPresenter(iView: IView) : BasePresenter(), MasterProductDao.I
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (masterProductIView as MasterProductIView).handleError(e!!.localizedMessage)
             }

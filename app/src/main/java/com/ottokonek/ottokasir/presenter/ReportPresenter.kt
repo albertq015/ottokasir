@@ -30,12 +30,12 @@ class ReportPresenter(val iView: IView) : BasePresenter(), ReportDao.IReportDao 
     override fun getTransactionReport(model: HistoryRequestModel, activity: BaseActivity) {
         dialogInfo = InfoDialog(activity, R.style.CustomDialog, activity.resources.getString(R.string.info_logout), true)
         ReportDao(this).onReportTransaction(model, activity).subscribe(object : RxObserver<TransactionReportResponse>(reportIView, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as TransactionReportResponse
                 if (o.meta.code == 200) {
@@ -49,7 +49,7 @@ class ReportPresenter(val iView: IView) : BasePresenter(), ReportDao.IReportDao 
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (iView as ITransactionReportIView).handleError(e!!.localizedMessage)
             }
@@ -60,12 +60,12 @@ class ReportPresenter(val iView: IView) : BasePresenter(), ReportDao.IReportDao 
         ReportDao(this).onExportTransaction(model, activity).subscribe(
                 object : RxObserver<TransactionExportResponseModel>(reportIView, null) {
 
-                    override fun onSubscribe(d: Disposable?) {
+                    override fun onSubscribe(d: Disposable) {
                         super.onSubscribe(d)
                         compositeDisposable.clear()
                     }
 
-                    override fun onNext(o: Any?) {
+                    override fun onNext(o: Any) {
                         super.onNext(o)
                         o as TransactionExportResponseModel
                         if (o.meta?.code == 200) {
@@ -73,7 +73,7 @@ class ReportPresenter(val iView: IView) : BasePresenter(), ReportDao.IReportDao 
                         }
                     }
 
-                    override fun onError(e: Throwable?) {
+                    override fun onError(e: Throwable) {
                         super.onError(e)
                         (reportIView as ITransactionReportIView).handleError(e!!.localizedMessage)
                     }

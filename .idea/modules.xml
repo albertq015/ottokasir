@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ottokasir-Ottokonek.iml" filepath="$PROJECT_DIR$/.idea/modules/Ottokasir-Ottokonek.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Ottokasir-Ottokonek.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ottokasir.iml" filepath="$PROJECT_DIR$/.idea/ottokasir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ottokasir.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ottokasir.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ottokasir.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ottokasir.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ottokasir.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ottokasir.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ottokasir.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ottokasir.app.unitTest.iml" />
     </modules>
   </component>
 </project>

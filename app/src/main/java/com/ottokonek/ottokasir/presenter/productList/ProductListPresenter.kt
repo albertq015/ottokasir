@@ -41,12 +41,12 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
         isOnLoadingData = true
         ProductlistInteractor().callProductlistInteractor(page, query, model).subscribe(object : RxObserver<ProductlistResponseModel>(iView, "Getting product..."
         ) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if (iView is ProductlistViewInterface) {
                     if ((o as BaseResponse).baseMeta.code == 200) {
                         iView.clearProducts()
@@ -69,7 +69,7 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
                 isOnLoadingData = false
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 view.hideLoading()
                 view.onConnectionFailed(e!!.localizedMessage)
             }
@@ -83,14 +83,14 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
         else message = null
 
         ProductDao().onGetProduct(page, query, model).subscribe(object : RxObserver<ProductlistResponseModel>(view, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 compositeDisposable.add(d)
 
                 if (iView is ProductlistViewInterface)
                     iView.setStatusAPI(false)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if (iView is ProductlistViewInterface) {
                     o as ProductlistResponseModel
                     if ((o as BaseResponse).baseMeta.code == 200) {
@@ -114,7 +114,7 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 view.hideLoading()
                 view.onConnectionFailed(e!!.localizedMessage)
             }
@@ -150,13 +150,13 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
 
     override fun syncLogin(data: LoginSyncRequest, activity: BaseActivity) {
         ProductDao().doLoginSync(data, activity).subscribe(object : RxObserver<LoginResponseModel>(view) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
 
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 if ((o as BaseResponse).baseMeta.code == 200) {
                     o as LoginResponseModel
                     CacheUtil.putPreferenceString(IConfig.SESSION_PAYMENT_CODE, o.data?.payment_method_code, activity);
@@ -178,7 +178,7 @@ class ProductListPresenter(val iView: IView) : BasePresenter(), ProductDao.IProd
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 (view as ProductlistViewInterface).hideProgressbar()
                 view.onConnectionFailed(e!!.localizedMessage)
             }

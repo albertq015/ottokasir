@@ -20,12 +20,12 @@ class RefundPresenter(iView: IView) : BasePresenter(), RefundDao.IRefund {
 
     override fun onRefund(data: RefundRequestModel, activity: BaseActivity) {
         RefundDao(this).onRefund(data, activity).subscribe(object : RxObserver<RefundResponseModel>(refundIView, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as RefundResponseModel
                 if (o.meta?.code == 200) {
@@ -35,7 +35,7 @@ class RefundPresenter(iView: IView) : BasePresenter(), RefundDao.IRefund {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (refundIView as SuccessRefundIView).handleError(e!!.localizedMessage)
             }
@@ -44,12 +44,12 @@ class RefundPresenter(iView: IView) : BasePresenter(), RefundDao.IRefund {
 
     override fun onCheckRefund(data: CheckRefundRequestModel, activity: BaseActivity) {
         RefundDao(this).onCheckRefund(data, activity).subscribe(object : RxObserver<CheckRefundResponseModel>(refundIView, null) {
-            override fun onSubscribe(d: Disposable?) {
+            override fun onSubscribe(d: Disposable) {
                 super.onSubscribe(d)
                 compositeDisposable.add(d)
             }
 
-            override fun onNext(o: Any?) {
+            override fun onNext(o: Any) {
                 super.onNext(o)
                 o as CheckRefundResponseModel
                 if (o.meta?.code == 200) {
@@ -59,7 +59,7 @@ class RefundPresenter(iView: IView) : BasePresenter(), RefundDao.IRefund {
                 }
             }
 
-            override fun onError(e: Throwable?) {
+            override fun onError(e: Throwable) {
                 super.onError(e)
                 (refundIView as CheckRefundIView).handleError(e!!.localizedMessage)
             }

@@ -28,12 +28,12 @@ class ProfilePresenter(iView: IView) : BasePresenter(), ProfileDao.IProfileDao {
         ProfileDao(this).onResetStoreType(data, activity).subscribe(
                 object : RxObserver<ResetStoreTypeResponseModel>(profileIView, null) {
 
-                    override fun onSubscribe(d: Disposable?) {
+                    override fun onSubscribe(d: Disposable) {
                         super.onSubscribe(d)
                         compositeDisposable.clear()
                     }
 
-                    override fun onNext(o: Any?) {
+                    override fun onNext(o: Any) {
                         super.onNext(o)
                         o as ResetStoreTypeResponseModel
                         if (o.meta?.code == 200) {
@@ -43,7 +43,7 @@ class ProfilePresenter(iView: IView) : BasePresenter(), ProfileDao.IProfileDao {
                         }
                     }
 
-                    override fun onError(e: Throwable?) {
+                    override fun onError(e: Throwable) {
                         super.onError(e)
                         (profileIView as ProfileIView).handleError(e!!.localizedMessage)
                     }
