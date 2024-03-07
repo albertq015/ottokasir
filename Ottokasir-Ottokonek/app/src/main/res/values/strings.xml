@@ -1,0 +1,413 @@
+<resources>
+    <string name="app_name_prod">OttoKasir</string>
+    <string name="app_name_dev">OttoKasir PH</string>
+    <string name="app_name_ptr">OttoKasir PTR</string>
+
+
+    <!--UPDATE BAHASA INDONESIA-->
+
+    <!--Masuk-->
+    <string name="kini_jual_beli_lebih_mudah">Ways to simplify your transaction</string>
+    <string name="masuk_dengan_akun_ottopay_kamu">Login with your OttoKonek Account</string>
+    <string name="nomor_handphone">Phone Number</string>
+    <string name="masukkan_no_handphone">Input Your Phone Number</string>
+    <string name="pin">PIN</string>
+    <string name="masukkan_pin">Input PIN</string>
+    <string name="masuk">Login</string>
+    <string name="belum_jadi_merchant_ottopay"><![CDATA[ Don\'t have an OttoKonek Account? <font color="#2b6447">Register Here</font>]]></string>
+    <string name="nomor_hp_dan_pin_tidak_boleh_kosong">Mobile number and PIN cannot be empty</string>
+
+    <!--Syarat dan Ketentuan-->
+    <string name="tnc_pdf"><![CDATA[ I have read and agree to the applicable OttoKasir <font color="#2b6447">Terms and Conditions</font> ]]></string>
+    <string name="lanjutkan">Continue</string>
+    <string name="syarat_dan_ketentuan">Terms and Conditions</string>
+
+    <!-- Menu -->
+    <string name="transaksi">Transaction</string>
+    <string name="daftar_transaksi">Transaction History</string>
+    <string name="laporan_penjualan">Sales Report</string>
+    <string name="kelola_produk">Manage Product</string>
+    <string name="pelanggan">Customer</string>
+    <string name="kasbon">Pay later</string>
+    <string name="omzet">Revenue</string>
+    <string name="panduan">Tutorial</string>
+    <string name="hubungi_kami">Contact Us</string>
+    <string name="profil">Profile</string>
+
+
+    <!--Menu Transaksi-->
+    <string name="cari_produk">Search Product</string>
+    <string name="total_pembayaran">Total Payment</string>
+    <string name="bayar">Pay</string>
+    <string name="rp_0">PHP 0</string>
+    <string name="belum_ada_harga">No price</string>
+    <string name="stok_spasi">Stock : \ </string>
+    <string name="stok_menipis">Stock is running low</string>
+    <string name="stok_habis">Out of Stock</string>
+    <string name="stok_">Stock : -</string>
+    <string name="maaf_stok_barang_kosong_harga_dan_belum_ada_harga">Please input the product price first!</string>
+    <string name="maaf_belum_ada_harga">Please input the product price first!</string>
+    <string name="maaf_stok_barang_kosong">Sorry, you run out of stock</string>
+    <string name="maaf_stok_barang_yang_tersedia">Sorry, your available stock is : \ </string>
+
+    <!--Menu Daftar Transaksi-->
+    <string name="sembunyikan_grafik_penjualan">Hide Transaction Chart</string>
+    <string name="tunjukan_grafik_penjualan">Show Transaction Chart</string>
+    <string name="transaksi_terakhir">Last Transaction</string>
+    <string name="daftar_transaksi_selengkapnya">See all transactions history</string>
+    <string name="transaksi_penjualan_seminggu_terakhir">Sales Transaction in Past Week</string>
+    <string name="total_penjualan">Total Sales</string>
+    <string name="detail">Detail</string>
+    <string name="harga">Price</string>
+    <string name="jumlah">Quantity</string>
+    <string name="order_id">Order ID</string>
+
+    <!--Menu Laporan Penjualan-->
+    <string name="silakan_masukkan_periode">Please Choose Period</string>
+    <string name="untuk_melakukan_filter_pada_ringkasan_laporan_yang_akan_ditampilkan">To filter the summary report that will be displayed</string>
+    <string name="tanggal_awal">Start Date</string>
+    <string name="tanggal_akhir">End Date</string>
+    <string name="tampilkan">Show Report</string>
+    <string name="tidak_terdapat_transaksi_pada_periode_tersebut">There are no transactions at this period</string>
+    <string name="ubah_periode">Change Period</string>
+    <string name="export_laporan">Export Report</string>
+    <string name="jenis_transaksi">TRANSACTION TYPE</string>
+    <string name="produk">PRODUCT</string>
+    <string name="periode">Period \ </string>
+
+    <!--Menu Kelola Produk-->
+    <string name="ubah">Edit</string>
+    <string name="tambah_produk">Add Product</string>
+    <string name="ubah_produk">Edit Product</string>
+    <string name="gambar_produk">Product Image</string>
+    <string name="nama_produk">Product Name</string>
+    <string name="contoh_indomie_goreng_85g">Example : Indomie Goreng 85g</string>
+    <string name="harga_jual">Price</string>
+    <string name="contoh_5_000">Example : 5,000</string>
+    <string name="stok">Stock</string>
+    <string name="contoh_200">Example : 200</string>
+    <string name="stok_minimum">Minimum Stock</string>
+    <string name="contoh_30">Example : 30</string>
+    <string name="simpan">Save</string>
+    <string name="hapus_produk">Delete Product</string>
+    <string name="scan">Scan</string>
+    <string name="pilih_gambar_produk_disini">Choose product image here</string>
+    <string name="nama_produk_required"><![CDATA[ Product Name <font color="#e03c4f">*</font>]]></string>
+    <string name="harga_jual_required"><![CDATA[ Price <font color="#e03c4f">*</font>]]></string>
+    <string name="stok_required"><![CDATA[ Stock <font color="#e03c4f">*</font>]]></string>
+    <string name="belum_ada_produk_yang_ditambahkan_ayo_tambah_produk_sekarang_juga">There are not product to sell. Let\'s add your product and start selling!</string>
+    <string name="tidak_aktif">Not Active</string>
+    <string name="aktif">Active</string>
+    <string name="tidak_bisa_mengganti_foto_master_produk">You can\'t change master product image</string>
+    <string name="stok_minimum_melebihi_stok_produk">Minimum stock cannot exceed stock product</string>
+
+
+    <!--Scan Barcode-->
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="arahkan_kamera_pada_barcode_yang_tertera_pada_produk">Point scanner to the barcode at the product</string>
+
+    <!--Onboarding Kelola Produk-->
+    <string name="step_onboarding_manage_one">1/7</string>
+    <string name="step_onboarding_manage_two">2/7</string>
+    <string name="step_onboarding_manage_three">3/7</string>
+    <string name="step_onboarding_manage_four">4/7</string>
+    <string name="step_onboarding_manage_five">5/7</string>
+    <string name="step_onboarding_manage_six">6/7</string>
+    <string name="step_onboarding_manage_seven">7/7</string>
+    <string name="title_onboarding_manage_one">Insert Product Image</string>
+    <string name="title_onboarding_manage_two">Enter the Product Name</string>
+    <string name="title_onboarding_manage_three">Enter Barcode</string>
+    <string name="title_onboarding_manage_four">Input Product Price</string>
+    <string name="title_onboarding_manage_five">Input Product Stock</string>
+    <string name="title_onboarding_manage_six">Input Minimum Stock</string>
+    <string name="title_onboarding_manage_seven">Save</string>
+    <string name="description_onboarding_manage_one">You can insert image from camera or phone gallery</string>
+    <string name="description_onboarding_manage_two">Your product name should include variant and size</string>
+    <string name="description_onboarding_manage_three">Click scan icon and point to barcode at the product</string>
+    <string name="description_onboarding_manage_four">Be sure to give competitive price to customer</string>
+    <string name="description_onboarding_manage_five">Be sure to maintain stock to be available for transaction</string>
+    <string name="description_onboarding_manage_six">You will be reminded to re-stock when the stock reach this level</string>
+    <string name="description_onboarding_manage_seven">The product that you add will be saved, and you are ready to start selling!</string>
+
+
+    <!--Menu Pelanggan-->
+    <string name="riwayat">History</string>
+    <string name="nama_pelanggan">Customer Name</string>
+    <string name="no_handphone">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="hapus">Delete</string>
+    <string name="kasbon_spasi">Pay Later \ </string>
+    <string name="kasbon_spasi_first">\ Pay Later</string>
+    <string name="belum_lunas">Unpaid</string>
+    <string name="lunas">Paid</string>
+    <string name="detail_pelanggan">Detail Customer</string>
+    <string name="tambah_pelanggan">Add Customer</string>
+    <string name="nama_pelanggan_required"><![CDATA[ Customer Name <font color="#e03c4f">*</font>]]></string>
+    <string name="no_handphone_required"><![CDATA[ Phone Number <font color="#e03c4f">*</font>]]></string>
+    <string name="ubah_pelanggan">Edit Customer</string>
+    <string name="format_email_salah">Invalid email format</string>
+    <string name="nomor_hp_tidak_valid">Invalid phone number</string>
+    <string name="cek_kembali_form_input_anda">Check your input form again</string>
+
+
+    <!--Menu Kasbon-->
+    <string name="laporan">Report</string>
+    <string name="cari_nama_nomor_hp">Search Name / Phone Number</string>
+    <string name="cari_nama_nomor_hp_resi">Search Name / Phone Number / TRX ID</string>
+    <string name="total_kasbon_spasi">Total Pay Later  : \ </string>
+    <string name="total_kasbon">Total Pay Later </string>
+    <string name="total_tagihan">Total Bill</string>
+    <string name="pilih_periode_laporan_kasbon_yang_ingin_ditampilkan">Choose period to generate pay later report </string>
+    <string name="total_omzet_hari_ini">Total Today\'s Revenue</string>
+    <string name="laporan_kasbon">Pay Later Report</string>
+    <string name="kasbon_aktif">Outstanding</string>
+
+
+    <!--Kasbon Kosong-->
+    <string name="belum_ada_catatan_kasbon">There are no active Pay Later</string>
+    <string name="saat_ini_kamu_belum_ada_pelanggan_yang_memiliki_catatan_kasbon">You don\'t have customer who have active Pay Later for now</string>
+    <string name="belum_ada_kasbon_lunas">There are no paid Pay Later</string>
+    <string name="saat_ini_kamu_belum_ada_catatan_kasbon_yang_lunas">You don\'t have paid Pay Later for now</string>
+
+
+    <!--Kasbon Detail Transaksi-->
+    <string name="detail_transaksi">Detail Transaction</string>
+    <string name="id_transaksi">ID Transaction</string>
+
+
+    <!--Onboarding Kasbon-->
+    <string name="lewati">Skip</string>
+    <string name="lanjut">Continue</string>
+    <string name="step_onboarding_one">1/4</string>
+    <string name="step_onboarding_two">2/4</string>
+    <string name="step_onboarding_three">3/4</string>
+    <string name="step_onboarding_four">4/4</string>
+    <string name="title_onboarding_kasbon_one">Pay With Pay Later</string>
+    <string name="title_onboarding_kasbon_two">Notes the Customer</string>
+    <string name="title_onboarding_kasbon_three">Manage in Pay Later Menu</string>
+    <string name="title_onboarding_kasbon_four">See Customer Pay Later in 1 Menu</string>
+    <string name="description_onboarding_kasbon_one">With this payment method, customer doesn\'t have to pay at the transaction, they can Pay Later</string>
+    <string name="description_onboarding_kasbon_two">Don\'t forget to takes note for the customer</string>
+    <string name="description_onboarding_kasbon_three">You can manage customer Pay Later in this menu</string>
+    <string name="description_onboarding_kasbon_four">You can see all of your customer Pay Later here. Don\'t forget to collect their Pay Later</string>
+
+
+    <!--Menu Hubungi Kami-->
+    <string name="telepon">Phone</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="website">Website</string>
+    <string name="jam_operasional">Operational Hour</string>
+    <string name="jam_operasional_deskripsi"><![CDATA[24/ 7]]></string>
+
+
+    <!--Menu Profil-->
+    <string name="profil_saya">MY PROFILE</string>
+    <string name="nama_lengkap">Full Name</string>
+    <string name="alamat_email">Email</string>
+    <string name="jenis_usaha">Store Type</string>
+    <string name="nama_usaha">Business Name</string>
+    <string name="alamat">ADDRESS</string>
+    <string name="alamat_pedagang">Merchant Address</string>
+    <string name="keluar">Log Out</string>
+    <string name="ubah_store_type">Change</string>
+
+
+    <!--Jenis Usaha-->
+    <string name="pilih_semua_spasi">Select all \ </string>
+    <string name="mulai_jualan_dengan_mudah">Start Selling in easy way</string>
+    <string name="rekomendasi_produk_untuk_toko_kamu">Product Recommendation for your store</string>
+
+    <!--Pilih Pelanggan-->
+    <string name="pilih_pelanggan">Choose Customer</string>
+    <string name="nama_pelanggan_nomor_hp">Customer Name / Phone Number</string>
+    <string name="cari_nomor_handphone_nama_pelanggan">Search Customer Name / Phone Number</string>
+
+    <!--Metode Pembayaran Cash-->
+    <string name="nominal_pembayaran">Nominal Payment</string>
+    <string name="nominal_kasbon">Total Bill</string>
+    <string name="batal">Cancel</string>
+    <string name="pelanggan_kapital">CUSTOMER</string>
+    <string name="pilih_pecahan">CHOOSE DENOMINATION</string>
+    <string name="uang_pas">Exact Amount</string>
+    <string name="lainnya">Other</string>
+    <string name="selesai">Done</string>
+    <string name="uang_pembayaran_harus_lebih_besar_dari_total_pembayaran">Payment cash should be greater than total payment</string>
+
+
+    <!--Metode Pembayaran QR-->
+    <string name="scan_qr">Scan QR</string>
+    <string name="bagikan_qr">Share QR</string>
+    <string name="tekan_tombol_ini_setelah_pembeli_melakukan_pembayaran">Press this button after the customer complete the payment</string>
+    <string name="selesaikan_pembayaran">Complete Payment</string>
+
+
+    <!--Metode Pembayaran Kasbon-->
+    <string name="metode_pembayaran_kapital">PAYMENT METHOD</string>
+    <string name="bukti_kasbon">Pay Later Receipt</string>
+
+
+    <!--Bukti Pembayaran-->
+    <string name="pembayaran">Payment</string>
+    <string name="transaksi_berhasil">Transaction Successful</string>
+    <string name="cetak_struk">Print Receipt</string>
+    <string name="lihat_detail">See Detail</string>
+    <string name="uang_pembayaran">Cash</string>
+    <string name="uang_kembali">Change</string>
+    <string name="transaksi_berikutnya">Next Transaction</string>
+    <string name="akun">Account</string>
+    <string name="melalui_aplikasi">Application</string>
+    <string name="tanggal_pelunasan">Repayment Date</string>
+
+
+    <!--Detail Bukti Pembayaran-->
+    <string name="bukti_pembelian">Receipt</string>
+    <string name="bukti_pelunasan_kasbon">Repayment Pay Later Receipt</string>
+
+    <!--Share QRIS-->
+    <string name="dicetak_oleh_ottocash">Printed By : OttoCash</string>
+    <string name="versi_cetak">Print Version : \ </string>
+
+
+    <!--Message Dialog Default-->
+    <string name="error_empty_input">Check your input form again</string>
+    <string name="error_global">Something went wrong</string>
+    <string name="default_notif">Under Construction</string>
+
+    <!--Dialog Kelola Produk-->
+    <string name="apakah_anda_ingin_menghapus_produk_ini">Do you want to delete this product?</string>
+    <string name="kembali">Back</string>
+    <string name="ya_hapus">Yes</string>
+    <string name="produk_berhasil_ditambahkan">Successfully add product!</string>
+    <string name="produk_berhasil_diubah">Successfully update product!</string>
+    <string name="kembali_transaksi">Return to Transaction</string>
+    <string name="tambah_produk_lain">Add Another Product</string>
+
+    <!--Dialog Pilih Gambar Produk-->
+    <string name="pilih_gambar_produk">Select a product image</string>
+    <string name="ambil_dari_kamera">Take Photo from Camera</string>
+    <string name="ambil_dari_galeri">Choose from gallery</string>
+    <string name="gagal_mendapatkan_gambar">Failed to Get the image!</string>
+
+
+    <!--Dialog Pelanggan-->
+    <string name="apakah_anda_ingin_menghapus_pelanggan_ini">Do you want to delete this customer?</string>
+    <string name="apakah_anda_ingin_mengubah_pelanggan_ini">Do you want to update this customer?</string>
+    <string name="ya_ubah">Yes</string>
+    <string name="pelanggan_berhasil_diubah">Successfully update customer!</string>
+    <string name="pelanggan_berhasil_disimpan">Successfully add customer!</string>
+    <string name="ok">OK</string>
+    <string name="pelanggan_berhasil_dihapus">Successfully delete customer!</string>
+
+
+    <!--Dialog Keluar-->
+    <string name="apakah_anda_ingin_keluar_dari_aplikasi">Do you want to exit the application?</string>
+    <string name="untuk_masuk_aplikasi_ini_lagi_anda_memerlukan_nomor_handphone_dan_pin_yang_terdaftar_pada_sistem_kami">Please enter registered number and PIN to login again</string>
+    <string name="ya_saya_ingin_keluar">Yes</string>
+    <string name="info_logout">Sorry, your session has ended. Please login again.</string>
+
+
+    <!--Dialog Ubah Jenis Usaha-->
+    <string name="anda_ingin_mengubah_jenis_usaha">Do you want to change your store type?</string>
+    <string name="jika_pilih_iya_maka_anda_akan_diminta_untuk_memasukkan_kembali_jenis_usaha_anda">If you choose "Yes" you will need to re-enter your store type</string>
+    <string name="ya_saya_ingin_ubah">Yes</string>
+    <string name="silahkan_login_kembali_untuk_memilih_jenis_usaha_anda">Please login again to enter your store type</string>
+
+
+    <!--Dialog Pengembalian Dana-->
+    <string name="mohon_tunggu_pengembalian_dana_anda_sedang_diproses">Please wait, your refund is being processed</string>
+
+
+    <!--Dialog kelola produk-->
+    <string name="barcode_sudah_digunakan_untuk_produk_lain">Barcode is already used for another product!</string>
+
+
+    <!--Dialog Generate QRIS-->
+    <string name="info_toko_belum_terdaftar_qris">You must be registered as a QR merchant to receive QR payments. Please contact Halo OttoKonek or your Salesman</string>
+
+
+    <!--Dialog Filter Pelanggan Riwayat-->
+    <string name="filter">Filter</string>
+    <string name="tipe_transaksi">Transaction Type</string>
+    <string name="semua">All</string>
+    <string name="uang_tunai">Cash</string>
+    <string name="qr">QR</string>
+    <string name="tanggal_transaksi">Transaction Date</string>
+    <string name="terapkan">Apply</string>
+
+    <!--Dialog Filter Kasbon-->
+    <string name="tipe_periode">Choose Period</string>
+    <string name="_3_hari">3 Days</string>
+    <string name="_7_hari">7 Days</string>
+    <string name="_14_hari">14 Days</string>
+    <string name="_1_bulan">1 Month</string>
+
+    <!--Dialog Sorting Kasbon-->
+    <string name="urutkan">Sort</string>
+    <string name="nominal_tertinggi_terendah">Highest to lowest amount</string>
+    <string name="nominal_terendah_tertinggi">Lowest to highest amount</string>
+    <string name="tanggal_terbaru">Newest date</string>
+    <string name="tanggal_terlama">Oldest date</string>
+
+    <!--Dialog Kasbon Aktif Bulk-->
+    <string name="peringatan">Warning</string>
+    <string name="anda_hanya_dapat_memilih_kasbon_dengan_nama_pelanggan_yang_sama">Bulk payment can only be done for same customer!</string>
+    <string name="oke_saya_mengerti">Okay, I understand</string>
+
+
+    <!--Dialog Metode Pembayaran Kasbon-->
+    <string name="pilih_pembayaran">Choose Payment</string>
+    <string name="metode_pembayaran">PAYMENT METHOD</string>
+
+    <!--Dialog Bagikan Bukti Pembelian - Pelunasan-->
+    <string name="pilih_penyimpanan">Choose Format</string>
+
+
+    <!--Stok Dialog-->
+    <string name="jual_dengan_stok">Sell with stock</string>
+    <string name="content_jual_dengan_stock">Add stock so you know when to re-stock again. If the stock reach 0, you can\'t sell the product</string>
+    <string name="content_stok_minimum">You will be reminded when the stock reach this level</string>
+
+
+    <!--Force Update Dialog-->
+    <string name="versi_baru_tersedia">New Version Available</string>
+    <string name="perbarui_aplikasi_anda_ke_versi_terbaru_untuk_dapat_terus_berjualan">Please update your application to the latest version</string>
+    <string name="perbarui_aplikasi">Update Application</string>
+    <string name="total_kasbon_kapital">TOTAL PAY LATER</string>
+    <string name="php">PHP</string>
+    <string name="tidak_ada_koneksi">Unable to connect to internet, please check your connection</string>
+    <string name="tanggal_akhir_tidak_boleh_kurang_dari_tanggal_awal">The end date cannot be less than the start date</string>
+
+
+    <!--Koneksi Buruk-->
+    <string name="koneksi_buruk">Oops, seems like you have bad connection</string>
+    <string name="silakan_periksa_koneksi_internet_anda_dan_klik_tombol_dibawah_ini_untuk_menampilkan_qr">Check your connection first. If it\'s already connected, Click this button below</string>
+    <string name="coba_lagi">Retry</string>
+
+    <string name="dialog_ask_prominent_title">Data Access Permission</string>
+    <string name="dialog_ask_prominent_contentf">You must agree with our Privacy Policy before using the application. By clicking the <b>“Agree”</b>, you accept the Privacy Policy, as may be amended from time to time, including the collection, sharing and processing of your personal data under the Privacy Policy.</string>
+    <string name="dialog_ask_prominent_contents">In order to use OttoKonek application, we require
+        your permission to access information from your device. To learn more about how we collect
+        and use data, review our
+        <font style='color:#006841'>
+            <a href='https://otto-konek.s3-ap-southeast-1.amazonaws.com/tnc/otto_konek_privacy_policy.html'>
+                Privacy Policy.
+            </a>
+        </font>
+    </string>
+
+    <string name="dialog_ask_prominent_btnf">OK, I Understand</string>
+    <string name="dialog_ask_prominent_btn_ok">Agree</string>
+    <string name="dialog_ask_prominent_btn_no">Cancel</string>
+
+
+    <string name="prominent_3">Ottokonek require access to your contact and contact list information for features as follows,
+\n1. Your own phone number for registration, account activation and OTP
+\n2. Your own phone number for points, vouchers redeem and/or used in transactions
+\n3. Your own phone number to be registered and to activate loan feature from our partners
+\n4. Your contact list data to enable automated input in telephone transaction and sending money to other e-wallets
+\n5. Your contact list data to gift vouchers to others</string>
+
+    <string name="label_close">Close</string>
+
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/toolbar" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlNext"
+        android:layout_below="@id/header"
+        android:background="@color/pinkish_grey"
+        android:visibility="visible" />
+
+    <!--<ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlNext"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syarat dan Ketentuan OttoKasir"
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="Terima kasih telah menggunakan layanan OTTOPAY dari PT REKSA TRANSAKSI SUKSES MAKMUR (PT RTSM), perusahan kami merupakan Penyelenggara Penunjang sistem pembayaran yang telah memegang Surat Penunjukan Bank Indonesia tertanggal 29 Agustus 2018 No 20/329/DKSP/Srt/B"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="Syarat dan Ketentuan Layanan OTTOPAY (Syarat dan Ketentuan) dan Kebijakan Privasi dibuat untuk menentukan syarat, ketentuan-ketentuan dan perikatan hukum yang mengikat Pengguna, dengan menggunakan layanan OTTOPAY, Pengguna secara sah:"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:text="    1."
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Mengakui bahwa Pengguna telah membaca dan memahami seluruh isi Syarat dan Ketentuan dan Kebijakan Privasi yang merupakan satu kesatuan yang tidak terpisahkan dari Syarat dan Ketentuan ini;"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:text="    2."
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Setuju untuk terikat oleh dan tunduk pada Syarat dan Ketentuan, dan;"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:text="    3."
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Mengetahui setiap akibat hukum dan keberlakukan Syarat dan Ketentuan serta konsekuensi hukum berupa pelanggaran atas Syarat dan Ketentuan sebagaimana dijelaskan dalam Syarat dan Ketentuan ini."
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/rlNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/tac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbTac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:gravity="top" />
+
+            <TextView
+                android:id="@+id/tvTac"
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/tnc_pdf"
+                android:textColor="#8b8b8b"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTac"
+            style="@style/DinMedium"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/tac"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_rectangle_grey"
+            android:elevation="2dp"
+            android:text="@string/lanjutkan"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

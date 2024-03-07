@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/viewTabLunas"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tabLayoutKasbonLunas"-->
+<!--            style="@style/TabLayoutStyle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:layout_marginTop="?attr/actionBarSize"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:tabIndicator="@drawable/tab_indicator"-->
+<!--            app:tabIndicatorColor="@color/navy_blue"-->
+<!--            app:tabIndicatorHeight="4dp"-->
+<!--            app:tabMaxWidth="0dp">-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                style="@style/DinMedium"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/lunas" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                style="@style/DinMedium"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/belum_lunas" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                style="@style/DinMedium"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/pelanggan" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                style="@style/DinMedium"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/laporan" />-->
+
+
+<!--        </com.google.android.material.tabs.TabLayout>-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewTabLayoutLunas"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/warm_grey_three"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tabLayoutKasbonLunas" />-->
+
+
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/viewPagerLunas"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/viewTabLayoutLunas" />-->
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewTabAktif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutKasbon"
+            style="@style/TabLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabIndicatorHeight="4dp"
+            app:tabMaxWidth="0dp">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/kasbonActive"
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kasbon_aktif" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/kasbonLunas"
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lunas" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/kasbonCustomer"
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pelanggan" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/kasbonLaporan"
+                style="@style/DinMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/laporan" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <View
+            android:id="@+id/viewTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/warm_grey_three"
+            app:layout_constraintTop_toBottomOf="@id/tabLayoutKasbon" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewTabLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

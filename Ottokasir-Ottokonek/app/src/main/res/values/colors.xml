@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#006841</color>
+    <color name="colorPrimary">#00753d</color>
+    <color name="colorAccent">#2b6447</color>
+
+    <!--<color name="colorPrimary">#d8ff7d1d</color>-->
+    <!--<color name="colorPrimaryDark">#80ff7d1d</color>-->
+    <!--<color name="colorAccent">#f9a914</color>-->
+
+    <!--<color name="colorCoconut_text_dialog">#ffffff</color>-->
+    <!--<color name="colorCoconut_background_dialog">#CC000000</color>-->
+    <!--<color name="colorCoconut_iconloading_dialog">#f9a914</color>-->
+
+    <color name="green_base_color">#2b6447</color>
+
+    <color name="red">#e03c4f</color>
+    <color name="faded_red">#FFC0CB</color>
+    <color name="transaparent_black">#80000000</color>
+    <color name="transparent100">#00ffffff</color>
+    <color name="ice_blue">#e8f2fe</color>
+    <color name="clear_blue">#1b81f8</color>
+    <color name="blue_ocean">#14056eb5</color>
+
+
+    <color name="white_transparent50">#80ffffff</color>
+    <color name="warm_grey">#949494</color>
+    <color name="warm_grey_two">#979797</color>
+    <color name="warm_grey_fourth">#f6f6f6</color>
+    <color name="grey_one">#dbe0e5</color>
+    <color name="warm_grey_three">#e6e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="yellowish_orange">#f9a914</color>
+    <color name="yellowish_orange_80">#5af9a914</color>
+    <color name="cerulean_blue">#0069e4</color>
+    <color name="deep_sky_blue">#1b81f8</color>
+    <color name="leafy_green">#3cc030</color>
+    <color name="green_two">#42966d</color>
+    <color name="soft_green">#19ae9f</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="black_20">#33000000</color>
+    <color name="pinkish_grey">#cacaca</color>
+    <color name="slate_grey">#575962</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="black">#191919</color>
+    <color name="white_two">#f9f9f9</color>
+    <color name="pumpkin_orange_50">#80ff7d1d</color>
+    <color name="pumpkin_orange_80">#d8ff7d1d</color>
+    <color name="white_three">#efefef</color>
+    <color name="color_grey">#b2b2b2</color>
+    <color name="blue">#005ecc</color>
+    <color name="black_10">#19191919</color>
+    <color name="white_four">#d7d7d7</color>
+    <color name="white_five">#f3f3f3</color>
+    <color name="pinkish_grey_two">#cccccc</color>
+    <color name="cherry_red">#ff001f</color>
+    <color name="color_background_slide">#66000000</color>
+
+
+    <!--OttoKonek Color-->
+    <color name="dark_green">#006841</color>
+    <color name="green_transparent_14">#14006841</color>
+    <color name="dark_blue_green_focus">#008051</color>
+
+</resources>

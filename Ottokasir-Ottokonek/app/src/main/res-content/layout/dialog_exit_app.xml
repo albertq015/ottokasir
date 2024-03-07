@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_border_top"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="27dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apakah_anda_ingin_keluar_dari_aplikasi"
+            android:textAppearance="@style/TextStyle13" />
+
+        <TextView
+            android:id="@+id/tv_infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/untuk_masuk_aplikasi_ini_lagi_anda_memerlukan_nomor_handphone_dan_pin_yang_terdaftar_pada_sistem_kami"
+            android:textAppearance="@style/TextStyle5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_fill_blue"
+                android:text="@string/kembali"
+                android:textAppearance="@style/TextStyle7" />
+
+            <Button
+                android:id="@+id/logoutAction"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_border_grey"
+                android:text="@string/ya_saya_ingin_keluar"
+                android:textAppearance="@style/TextStyle45" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

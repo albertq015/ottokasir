@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+
+    android:background="@color/white_five"
+    tools:context=".ui.fragment.profile.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_profile_placeholder" />
+
+            <TextView
+                android:id="@+id/tvMerchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name name name" />
+
+            <TextView
+                android:id="@+id/tvMerchantId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:text="M.ID 5252525252" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:text="@string/profil_saya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_lengkap" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama" />
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_handphone" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="088888888888" />
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alamat_email" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email@Email.com" />
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+
+                <LinearLayout
+                    android:id="@+id/lyHubWhatsApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextStyleProfile_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jenis_usaha" />
+
+                        <TextView
+                            android:id="@+id/tvStoreTypeName"
+                            style="@style/TextStyleProfile_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kecantikan" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvResetStoreType"
+                        style="@style/TextStyleProfile_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/ubah_store_type"
+                        android:textColor="@color/blue" />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_usaha" />
+
+                <TextView
+                    android:id="@+id/tvMerchantName2"
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salon Bu Ratno" />
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginBottom="4dp"
+                android:paddingLeft="16dp"
+                android:text="@string/alamat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alamat_pedagang" />
+
+                <TextView
+                    android:id="@+id/tvMerchantAddress"
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Wolter Mongonsidi,Wolter Mongonsidi,Wolter Mongonsidi,Wolter Mongonsidi,Wolter Mongonsidi,Wolter Mongonsidi," />
+
+                <View
+                    style="@style/ProfileSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:paddingLeft="16dp"
+                android:text="REKENING BANK"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextStyleProfile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rekening Utama" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_background"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/tvBankName"
+                        style="@style/TextStyleProfile_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="PT.Bank Central Asia"
+                        app:layout_constraintLeft_toRightOf="@+id/ivBank"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvAccName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="8dp"
+                        android:text="a.n Rianti Barbosa"
+                        app:layout_constraintBottom_toTopOf="@id/tvRekNumber"
+                        app:layout_constraintLeft_toRightOf="@+id/ivBank" />
+
+                    <TextView
+                        android:id="@+id/tvRekNumber"
+                        style="@style/TextStyleProfile_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="0888 8088 0089"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/ivBank" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextStyleProfile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Kode PIN" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Ganti PIN" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="36dp"
+                android:background="@color/white"
+                android:text="@string/keluar"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

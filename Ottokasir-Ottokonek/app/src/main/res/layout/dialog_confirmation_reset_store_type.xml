@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transaparent_black"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_white_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AvenirMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/anda_ingin_mengubah_jenis_usaha"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/warm_grey_three" />
+
+        <TextView
+            style="@style/AvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:text="@string/jika_pilih_iya_maka_anda_akan_diminta_untuk_memasukkan_kembali_jenis_usaha_anda"
+            android:textColor="#4a4a4a"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/AvenirHeavy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_fill_blue"
+                android:letterSpacing="0.04"
+                android:text="@string/kembali"
+                android:textAppearance="@style/AvenirHeavy"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnYes"
+                style="@style/AvenirHeavy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_border_grey"
+                android:letterSpacing="0.04"
+                android:text="@string/ya_saya_ingin_ubah"
+                android:textAppearance="@style/AvenirHeavy"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026091282617",
+    "firebase_url": "https://ottokasir-6416e.firebaseio.com",
+    "project_id": "ottokasir-6416e",
+    "storage_bucket": "ottokasir-6416e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026091282617:android:885c9f56aeefff29edeb68",
+        "android_client_info": {
+          "package_name": "com.ottokonek.ottokasir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026091282617-kq5q9rllh8hei0jkge27r4al8k568g4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9D9YQdITdNFAtFwcgfP9DsZZFZg_eCRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026091282617-kq5q9rllh8hei0jkge27r4al8k568g4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transaparent_black"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_dialog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_close_black" />
+
+                <TextView
+                    style="@style/AvenirMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/filter"
+                    android:textColor="#4a4a4a"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvReset"
+                style="@style/AvenirHeavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/ubah"
+                android:textColor="#e03c4f"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/warm_grey_three" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/AvenirMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipe_periode"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv3Days"
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border_grey"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:padding="10dp"
+                    android:text="@string/_3_hari"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv7Days"
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounded_border_grey"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:padding="10dp"
+                    android:text="@string/_7_hari"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv14Days"
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounded_border_grey"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:padding="10dp"
+                    android:text="@string/_14_hari"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv30Days"
+                    style="@style/DinMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounded_border_grey"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:padding="10dp"
+                    android:text="@string/_1_bulan"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/warm_grey_three" />
+
+            <TextView
+                style="@style/AvenirMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="@string/tanggal_transaksi"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_grey"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_16dp"
+                    android:hint="@string/tanggal_awal"
+                    android:padding="14dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_grey"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_16dp"
+                    android:hint="@string/tanggal_akhir"
+                    android:padding="14dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnTerapkan"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded_fill_blue"
+                android:layout_marginBottom="10dp"
+                android:text="@string/terapkan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

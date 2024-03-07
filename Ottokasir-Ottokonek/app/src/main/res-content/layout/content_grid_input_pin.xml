@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gLayout_keypad_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:columnCount="3"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:drawSelectorOnTop="true"
+    android:foregroundGravity="center">
+
+    <FrameLayout
+        android:id="@+id/l_1"
+        android:layout_columnWeight="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_2"
+        android:layout_columnWeight="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_3"
+        android:layout_columnWeight="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_4"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_5"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_6"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_7"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_8"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_9"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout android:layout_columnWeight="1" />
+
+    <FrameLayout
+        android:id="@+id/l_0"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/lupaPin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_b"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/backspace_white"
+            android:textColor="@color/color_white" />
+    </FrameLayout>
+</GridLayout>

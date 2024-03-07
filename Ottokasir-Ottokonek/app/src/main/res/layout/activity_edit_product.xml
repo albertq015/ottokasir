@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/snackbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextStyle45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gambar_produk"
+                        android:textColor="#4a4a4a" />
+
+                    <LinearLayout
+                        android:id="@+id/lyPhotoProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_stripes"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivProduct"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivHolderPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_camera_grey" />
+
+                        <TextView
+                            android:id="@+id/ivHolderText"
+                            style="@style/AvenirHeavy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/pilih_gambar_produk_disini"
+                            android:textColor="#949494"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/containerConstraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="24dp"
+                            android:text="Jenis Produk"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/include2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:baselineAligned="false">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvProduct"
+                                    style="@style/TextStyle70"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded_fill_blue"
+                                    android:gravity="center"
+                                    android:paddingTop="12dp"
+                                    android:paddingBottom="12dp"
+                                    android:text="Barang"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintEnd_toStartOf="@+id/tvService"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintStart_toStartOf="@+id/textView"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvService"
+                                    style="@style/TextStyle46"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rounded_border_grey"
+                                    android:gravity="center"
+                                    android:paddingTop="12dp"
+                                    android:paddingBottom="12dp"
+                                    android:text="Jasa"
+                                    app:layout_constraintBottom_toBottomOf="@+id/tvProduct"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintStart_toEndOf="@+id/tvProduct"
+                                    app:layout_constraintTop_toTopOf="@+id/tvProduct" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rrrr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:id="@+id/lyProduct"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="true"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/tvTitleProductName"
+                                    style="@style/TextStyle45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nama_produk"
+                                    android:textColor="#4a4a4a" />
+
+                                <EditText
+                                    android:id="@+id/etProductName"
+                                    style="@style/TextStyle45"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@drawable/rounded_border_grey"
+                                    android:ems="10"
+                                    android:focusableInTouchMode="true"
+                                    android:hint="@string/contoh_indomie_goreng_85g"
+                                    android:inputType="textPersonName"
+                                    android:paddingStart="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lyProduct"
+                                android:orientation="vertical"
+                                app:layout_constraintTop_toBottomOf="@id/lyProduct">
+
+                                <LinearLayout
+                                    android:id="@+id/partial_scan_barcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+
+                                    <TextView
+                                        android:id="@+id/tvScanBarcode"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Barcode"
+                                        android:textColor="#4a4a4a" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/tvResultBarcode"
+                                            style="@style/TextStyle45"
+                                            android:layout_width="0dp"
+                                            android:layout_height="45dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/rounded_border_grey"
+                                            android:hint="@string/scan_barcode"
+                                            android:inputType="number"
+                                            android:paddingStart="16dp"
+                                            android:paddingTop="12dp"
+                                            android:paddingBottom="12dp" />
+
+                                        <ImageView
+                                            android:id="@+id/imgClearBarcode"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginEnd="7dp"
+                                            android:background="@drawable/ic_close_black"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:id="@+id/iv_scan"
+                                            style="@style/TextStyle46"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_vertical"
+                                            android:drawableStart="@drawable/ic_scan_barcode"
+                                            android:drawablePadding="9dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/scan"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvTitleProductPrice"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/harga_jual"
+                                        android:textColor="#4a4a4a" />
+
+                                    <!--<com.ottokonek.ottokonek.utils.MyCurrencyEditText
+                                        android:id="@+id/etPrice"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="8dp"
+                                        android:background="@drawable/rounded_border_grey"
+                                        android:hint="@string/contoh_5_000"
+                                        android:inputType="number"
+                                        android:paddingStart="16dp"
+                                        tools:ignore="RtlSymmetry" />-->
+
+                                    <EditText
+                                        android:id="@+id/etPrice"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="8dp"
+                                        android:background="@drawable/rounded_border_grey"
+                                        android:digits="0123456789.,"
+                                        android:hint="@string/contoh_5_000"
+                                        android:inputType="numberDecimal"
+                                        android:paddingStart="16dp"
+                                        tools:ignore="RtlSymmetry" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/tvInformationStock"
+                                            style="@style/DinMedium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:drawableEnd="@drawable/ic_warning_grey_oval"
+                                            android:drawablePadding="3dp"
+                                            android:text="@string/jual_dengan_stok"
+                                            android:textColor="@color/warm_grey" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:gravity="end"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tvStatusStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="end"
+                                            android:text="@string/tidak_aktif"
+                                            android:textColor="@color/warm_grey"
+                                            android:textSize="12sp" />
+
+                                        <Switch
+                                            android:id="@+id/enableStock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginStart="4dp"
+                                            android:gravity="center_vertical"
+                                            android:switchMinWidth="50dp"
+                                            android:theme="@style/AppTheme.SwitchBlue" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lyStock"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:focusableInTouchMode="true"
+                                    android:orientation="vertical"
+                                    android:visibility="gone"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/tvTitleStockBarang"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/stok"
+                                        android:textColor="#4a4a4a" />
+
+                                    <EditText
+                                        android:id="@+id/etStockProduct"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="8dp"
+                                        android:background="@drawable/rounded_border_grey"
+                                        android:focusableInTouchMode="true"
+                                        android:hint="@string/contoh_200"
+                                        android:inputType="numberDecimal"
+                                        android:paddingStart="16dp"
+                                        tools:ignore="RtlSymmetry" />
+
+
+                                    <TextView
+                                        android:id="@+id/tvInformationStockMinimum"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:drawableEnd="@drawable/ic_warning_grey_oval"
+                                        android:drawablePadding="3dp"
+                                        android:text="@string/stok_minimum"
+                                        android:textColor="#4a4a4a" />
+
+                                    <EditText
+                                        android:id="@+id/etStockAlert"
+                                        style="@style/TextStyle45"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="8dp"
+                                        android:background="@drawable/rounded_border_grey"
+                                        android:focusableInTouchMode="true"
+                                        android:hint="@string/contoh_30"
+                                        android:inputType="numberDecimal"
+                                        android:paddingStart="16dp"
+                                        tools:ignore="RtlSymmetry" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/etStockProductDummy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="16dp"
+                                    android:textColor="@color/white"
+                                    android:visibility="visible"
+                                    tools:ignore="RtlSymmetry" />
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lyProduct"
+                                android:orientation="vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvMasterProduct"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:itemCount="3">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="45dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnDelete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_grey"
+                        android:drawableStart="@drawable/ic_delete"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/warm_grey"
+                        android:textSize="16sp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_delete"
+                            android:drawablePadding="4dp"
+                            android:text="@string/hapus_produk" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_rectangle_grey"
+                        android:enabled="false"
+                        android:padding="12dp"
+                        android:text="@string/simpan"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+

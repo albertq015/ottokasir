@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/transaparent_black"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_white_dialog"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="27dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="28dp">
+
+        <TextView
+            style="@style/AvenirMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apakah kamu ingin melakukan refund untuk tranksasi ini?"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/AvenirHeavy"
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_fill_blue"
+                android:letterSpacing="0.04"
+                android:text="Kembali"
+                android:textAppearance="@style/AvenirHeavy"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/AvenirHeavy"
+                android:id="@+id/btnYes"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_border_grey"
+                android:letterSpacing="0.04"
+                android:text="Ya, Refund"
+                android:textAppearance="@style/AvenirHeavy"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

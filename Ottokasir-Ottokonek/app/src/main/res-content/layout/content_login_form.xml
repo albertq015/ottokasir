@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="170dp"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/masuk_dengan_akun_ottopay_kamu"
+        android:textAppearance="@style/DinMedium"
+        android:textColor="@color/greyish_brown"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/nomor_handphone"
+        android:textAppearance="@style/AvenirBook"
+        android:textColor="@color/greyish_brown"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border_grey"
+        android:hint="@string/masukkan_no_handphone"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:paddingStart="16dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+    <!-- PIN -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pin"
+        android:textAppearance="@style/AvenirBook"
+        android:textColor="@color/greyish_brown"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/pinEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border_grey"
+        android:hint="@string/masukkan_pin"
+        android:imeOptions="actionDone"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <!-- forgot pin -->
+    <TextView
+        android:id="@+id/forgotPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dp"
+        android:text="Lupa PIN"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_fill_blue"
+        android:elevation="2dp"
+        android:text="@string/masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shadow" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDaftarMerchant"-->
+<!--        style="@style/DinMedium"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:gravity="center"-->
+<!--        android:lineSpacingExtra="4sp"-->
+<!--        android:text="@string/belum_jadi_merchant_ottopay"-->
+<!--        android:textColor="#8b8b8b"-->
+<!--        android:textSize="16sp" />-->
+
+</LinearLayout>

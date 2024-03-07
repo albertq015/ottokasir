@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_appbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="11dp"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txt_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="17dp"
+                android:text="Daftar Transaksi"
+                android:textAppearance="@style/TextStyle18"
+                android:textColor="#575962" />
+
+            <TextView
+                android:id="@+id/tv_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal Laporan"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextStyle50" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tgl"
+                android:layout_alignParentEnd="true"
+                android:text="10 Januari 2019"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextStyle51" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/txt_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Pembelian"
+            android:textAppearance="@style/TextStyle47" />
+
+        <TextView
+            android:id="@+id/tv_soldOut"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Barang Terjual"
+            android:textAppearance="@style/TextStyle47" />
+
+
+        <TextView
+            android:id="@+id/tv_transcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_buy"
+            android:drawableStart="@mipmap/ic_penjualan"
+            android:drawablePadding="2dp"
+            android:text="2"
+            android:textAppearance="@style/TextStyle48" />
+
+        <TextView
+            android:id="@+id/tv_total_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_buy"
+            android:layout_toEndOf="@+id/tv_transcount"
+            android:text="| Rp 40.000"
+            android:textAppearance="@style/TextStyle57" />
+
+        <TextView
+            android:id="@+id/total_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_soldOut"
+            android:layout_alignStart="@+id/tv_soldOut"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_barang"
+            android:drawablePadding="2dp"
+            android:text="4"
+            android:textAppearance="@style/TextStyle49" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewTrans"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white_five">
+
+    </View>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

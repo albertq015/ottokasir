@@ -1,0 +1,656 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_base_color</item>
+
+    </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_base_color</item>
+
+    </style>
+
+    <style name="Header">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#554d56</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="DialogSlideAnimCoconut" parent="@style/CoconutDialogFullScreen">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomDialog2">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog2" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transaparent_black</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="dialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="style_bottom_sheet" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowBackground">@color/transaparent_black</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+
+    <!--<style name="MonthPickerDialogStyle">-->
+    <!--<item name="monthBgColor">#fff</item>-->
+    <!--<item name="monthBgSelectedColor">@color/pumpkin_orange_80</item>-->
+    <!--<item name="monthFontColorSelected">#fff</item>-->
+    <!--<item name="monthFontColorNormal">#000000</item>-->
+    <!--<item name="monthFontColorDisabled">#33000000</item>-->
+
+    <!--<item name="headerBgColor">@color/yellowish_orange</item>-->
+    <!--<item name="headerFontColorSelected">#fff</item>-->
+    <!--<item name="headerFontColorNormal">#85FFFFFF</item>-->
+    <!--<item name="headerTitleColor">#fff</item>-->
+    <!--</style>-->
+
+
+    <!-- Custom Fonts-->
+    <style name="AvenirBook" parent="android:TextAppearance">
+        <item name="fontPath">font/Avenir-Book.ttf</item>
+    </style>
+
+    <style name="AvenirBlack" parent="android:TextAppearance">
+        <item name="fontPath">font/Avenir-Black.ttf</item>
+    </style>
+
+    <style name="AvenirMedium" parent="android:TextAppearance">
+        <item name="fontPath">font/Avenir-Medium.ttf</item>
+    </style>
+
+    <style name="AvenirHeavy" parent="android:TextAppearance">
+        <item name="fontPath">font/Avenir-Heavy.ttf</item>
+    </style>
+
+    <style name="DinMedium" parent="android:TextAppearance">
+        <item name="fontPath">font/DIN-Medium.otf</item>
+    </style>
+
+    <style name="DinRegular" parent="android:TextAppearance">
+        <item name="fontPath">font/DIN-Regular.ttf</item>
+    </style>
+
+    <style name="LatoRegular" parent="android:TextAppearance">
+        <item name="fontPath">font/Lato-Regular.ttf</item>
+    </style>
+
+    <style name="LatoSemiBold" parent="android:TextAppearance">
+        <item name="fontPath">font/Lato-Semibold.ttf</item>
+    </style>
+
+    <style name="DINAlternateBold" parent="android:TextAppearance">
+        <item name="fontPath">font/DINAlternate-Bold.ttf</item>
+    </style>
+
+
+    <style name="TextStylePin">
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <style name="TextStyle10">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle28">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAppearance">@style/AvenirBlack</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle36">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/leafy_green</item>
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+    </style>
+
+    <style name="TextStyle48">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:textAppearance">@style/DINAlternateBold</item>
+    </style>
+
+    <style name="TextStyle49">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/DINAlternateBold</item>
+        <item name="android:textColor">@color/deep_sky_blue</item>
+    </style>
+
+    <style name="TextStyle57">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/DINAlternateBold</item>
+        <item name="android:textColor">@color/color_grey</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle58">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAppearance">@style/LatoSemiBold</item>
+    </style>
+
+    <style name="TextStyle17">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle41">
+        <item name="android:textAppearance">@style/AvenirBlack</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/leafy_green</item>
+    </style>
+
+    <style name="TextStyle12">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle13">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle20">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle22">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle23">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/white_four</item>
+    </style>
+
+    <style name="TextStyle23Alt">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle34">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle19">
+        <item name="android:textAppearance">@style/DINAlternateBold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle18">
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle15">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle3">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle35">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle55">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle25">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle63">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_four</item>
+    </style>
+
+    <style name="TextStyle45">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle14">
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle26">
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle7">
+        <item name="android:textAppearance">@style/AvenirMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle27">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle40">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle46">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle70">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle51">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle59">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle60">
+        <item name="android:textAppearance">@style/DinMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/yellowish_orange</item>
+    </style>
+
+    <style name="TextStyle24">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle29">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle37">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyle61">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/white_four</item>
+    </style>
+
+
+    <style name="TextStyle33">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle11">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle43">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/deep_sky_blue</item>
+    </style>
+
+    <style name="TextStyle44">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle54">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/yellowish_orange</item>
+    </style>
+
+    <style name="TextStyle6">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/yellowish_orange</item>
+    </style>
+
+    <style name="TextStyle32">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/yellowish_orange</item>
+    </style>
+
+    <style name="TextStyle2">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle5">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle8">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle9">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle16">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle50">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle52">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle53">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle56">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle47">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle21">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/pinkish_grey</item>
+    </style>
+
+    <style name="TextStyle4">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle62">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white_four</item>
+    </style>
+
+    <style name="TextStyle30">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_60</item>
+    </style>
+
+    <style name="TextStyle31">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle38">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="TextStyle39">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="TextStyle42">
+        <item name="android:textAppearance">@style/DinRegular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+    </style>
+
+    <style name="TextStyleProfile_1">
+        <item name="android:textAppearance">@style/AvenirBook</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:color">@color/warm_grey</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="TextStyleProfile_2">
+        <item name="android:textAppearance">@style/AvenirHeavy</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="ProfileSeparator">
+        <item name="android:background">@color/warm_grey</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="DialogSlideAnimCoconutFullScreen" parent="@style/CoconutDialogFullScreen">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="PFCheckBox">
+        <item name="android:checkboxStyle">@style/PFLockScreenCodeStyle</item>
+        <item name="checkboxStyle">@style/PFLockScreenCodeStyle</item>
+    </style>
+
+    <style name="PFLockScreenCodeStyle">
+        <item name="android:button">@drawable/ic_custom_selected_pin</item>
+    </style>
+
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--Style Switch-->
+    <style name="AppTheme.SwitchBlue">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#949494
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_rounded_buttom_dialog</item>
+    </style>
+
+</resources>

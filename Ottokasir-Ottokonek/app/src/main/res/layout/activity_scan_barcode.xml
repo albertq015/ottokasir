@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/scanBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:borderColor="@android:color/transparent"
+            app:laserColor="@color/blue"
+            app:laserEnabled="true"
+            app:maskColor="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:scaleType="centerCrop"
+            android:scaleY="1.2"
+            android:src="@drawable/combined_shape" />
+
+        <TextView
+            style="@style/TextStyle19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/arahkan_kamera_pada_barcode_yang_tertera_pada_produk" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "168409529774",
+    "project_id": "ottokasir-45a1e",
+    "storage_bucket": "ottokasir-45a1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168409529774:android:eb9b8000e80139c1641c3f",
+        "android_client_info": {
+          "package_name": "com.ottokonek.ottokonek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168409529774-3e371vvs7t5ud1nt3ju1kogi28fjlreg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu3ldYHwm_46li80_dYbyD8D40L5SPFds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168409529774-3e371vvs7t5ud1nt3ju1kogi28fjlreg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent100">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:elevation="1dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_top"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="27dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa PIN"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextStyle13" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14sp"
+          android:text="Untuk merubah pin kamu, harus dilakukan di aplikasi ottopay. terima kasih"/>
+    </LinearLayout>
+</FrameLayout>
+</RelativeLayout>
